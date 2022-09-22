@@ -3,11 +3,11 @@ ARG BASE_OS_VERSION="3"
 
 FROM ${BASE_OS}:${BASE_OS_VERSION}
 
-ARG CATT_VERSION=0.12.0
+ARG CATT_VERSION=0.12.9
 
-LABEL maintainer="datmanslo@yahoo.com" \
+LABEL maintainer="garrett.peavy@gmail.com" \
     version="{CATT_VERSION}" \
-    repo="github.com/datmanslo/docker-catt"
+    repo="github.com/gpeavy/docker-catt"
 
 RUN apk add --no-cache python3 py3-pip && \
     pip3 install catt==${CATT_VERSION} && \
